@@ -1,52 +1,57 @@
 *,
-*::after
-,*::before{
-margin: 0;
-padding: 0;
-font-family: Arial, Helvetica, sans-serif;
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
 }
 body{
     height: 100vh;
     overflow: hidden;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .container{
-display: flex;
-flex-direction: column;
-height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex:1
 
 }
 
 /* nav bar */
 .nav{
-display: flex;
-justify-content: space-around;
-align-items: center;
-margin-left: auto !important;
-margin-right: 30px;
-margin-top: .5rem;
-/* gap: 10px; */
-min-width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto !important;
+    margin-right: 30px;
+    margin-top: .5rem;
+    min-width: auto;
 
 }
 
 /* selecting the a links */
 .nav a{
-display: inline-block;
-text-decoration: none;
-text-transform: capitalize;
-line-height: 20px;
-padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 20px;
+    padding: 10px;
 }
+
+/* hover effect */
+
 .nav a:hover{
-text-decoration: underline;
+    text-decoration: underline;
 }
+
+/* selecting image  */
 .nav img{
-  display: inline-block;
-  height: 24px; 
-  line-height: 20px; 
-  padding: 20px;
-  background: transparent;
+    display: inline-block;
+    height: 24px; 
+    line-height: 20px; 
+    padding: 20px;
+    background: transparent;
 }
 .nav img:hover{
     padding: 20px;
@@ -77,9 +82,8 @@ text-decoration: underline;
 
 .image-container{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
     flex-direction: column;
+    flex: 1;
     width: 100%;
    
 }
@@ -113,8 +117,8 @@ form{
     background: #fff;
 }
  .items{
-     display: flex;
-     justify-content: center;
+    display: flex;
+    justify-content: center;
     padding-top: 20px;
 }
 .items button{
@@ -183,18 +187,20 @@ hr{
     color: #70757A;
 }
  .sub-item1 ul, .item-terms ul{
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .sub-item1 ul,
 .item-terms ul{
     width: 100%;
     list-style: none;
 }
+
 .sub-item1 ul  li{
     padding: 12px 4px;
 }
+
 .sub-item1 ul  li a,
 .item-terms ul li a{
     padding: 19px 14px;
@@ -202,6 +208,7 @@ align-items: center;
     font-size: 16px;
     color: #70757A;
 } 
+
 .sub-item1 ul  li a:hover,
 .footer p:hover,
 .item-terms ul li:hover{
@@ -222,7 +229,7 @@ align-items: center;
     padding: 19px 12px;
     }
 }
-/*
+
 
 
 
